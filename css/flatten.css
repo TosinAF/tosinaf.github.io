@@ -1,0 +1,57 @@
+body,html {
+	background: #FFFFFF;
+	height: 100%;
+	min-height: 100%;
+}
+
+.header {
+	margin-top: 10%;
+}
+
+.title {
+	color: #222222;
+	padding: 4px;
+	margin-left: -10px;
+	font-size: 43px;
+	font-family: 'Quicksand', sans-serif;
+	font-weight: 300;
+	display: inline-block;
+}
+
+.menu {
+	color: #222222;
+	margin-top: 50%;
+	font-size: 20px;
+	font-family: 'Quicksand', sans-serif;
+	border-bottom-style: solid;
+	border-bottom-width: medium;
+	border-bottom-color: white;
+	display: inline-block;
+}
+
+.title:hover {
+	color: #DB7633;
+	font-weight: 400;
+}
+
+.menu:hover {
+	color: #DB7633;
+	border-bottom-color: #DB7633;
+}
+
+.shortDesc {
+	color: #222222;
+	margin-top: 5%;
+	font-family: 'Quicksand', sans-serif;
+	font-weight: 300;
+	font-size: 62px;
+}
+
+strong {
+	font-weight: bold;
+	color: #DB7633;
+}
+
+.fill {
+	height: 10%;
+}
