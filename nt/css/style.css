@@ -1,0 +1,59 @@
+/*
+We highly recommend you use SASS and write your custom styles in sass/_custom.scss.
+However, this blank file is available if you prefer
+
+Convert These Styes to SASS later
+*/
+
+body {
+	background-color: #4AA3DF;
+	margin-bottom: 0px;
+}
+
+.title {
+	padding-top: 15px;
+}
+
+.subtitle {
+	padding-bottom: 15px;
+}
+
+h1 {
+	font-size: 90px;
+	color: white;
+}
+
+h2 {
+	font-size: 25px;
+	color: white;
+}
+
+.navBarItem {
+	float: left;
+	padding-top: 30px;
+	padding-right: 50px;
+}
+
+p.navBarText {
+	text-align:center;
+	color: white;
+}
+
+#navBarTitle {
+	padding-top: 30px;
+	color: white;
+}
+
+#getStartedButtonText {
+	font-size: 25px;
+}
+
+form {
+	padding-top: 130px;
+	color: white;
+}
+
+#footer_img {
+	padding-top: 70px;
+	margin-bottom: 0px;
+}

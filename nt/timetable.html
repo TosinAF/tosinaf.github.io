@@ -1,0 +1,270 @@
+<!doctype html>
+<!-- paulirish.com/2008/conditional-stylesheets-vs-css-hacks-answer-neither/ -->
+<!--[if lt IE 7]> <html class="no-js ie6 oldie" lang="en"> <![endif]-->
+<!--[if IE 7]>    <html class="no-js ie7 oldie" lang="en"> <![endif]-->
+<!--[if IE 8]>    <html class="no-js ie8 oldie" lang="en"> <![endif]-->
+<!--[if IE 9]>    <html class="no-js ie9" lang="en"> <![endif]-->
+<!-- Consider adding an manifest.appcache: h5bp.com/d/Offline -->
+<!--[if gt IE 9]><!--> <html class="no-js" lang="en" itemscope itemtype="http://schema.org/Product"> <!--<![endif]-->
+<head>
+	<meta charset="utf-8">
+
+	<!-- Use the .htaccess and remove these lines to avoid edge case issues.
+			 More info: h5bp.com/b/378 -->
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+
+	<title>Timetable @ Notts</title>
+	<meta name="description" content="" />
+	<meta name="keywords" content="" />
+	<meta name="author" content="humans.txt">
+
+	<link rel="shortcut icon" href="favicon.png" type="image/x-icon" />
+
+	<!-- Facebook Metadata /-->
+	<meta property="fb:page_id" content="" />
+	<meta property="og:image" content="" />
+	<meta property="og:description" content=""/>
+	<meta property="og:title" content=""/>
+
+	<!-- Google+ Metadata /-->
+	<meta itemprop="name" content="">
+	<meta itemprop="description" content="">
+	<meta itemprop="image" content="">
+
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
+
+	<!-- We highly recommend you use SASS and write your custom styles in sass/_custom.scss.
+		 However, there is a blank style.css in the css directory should you prefer -->
+	<link rel="stylesheet" href="css/gumby.css">
+	<link rel="stylesheet" href="css/style.css">
+
+	<script src="js/libs/modernizr-2.6.2.min.js"></script>
+</head>
+
+<body>
+
+	<!-- Grab Google CDN's jQuery, fall back to local if offline -->
+	<!-- 2.0 for modern browsers, 1.10 for .oldie -->
+	<script>
+	var oldieCheck = Boolean(document.getElementsByTagName('html')[0].className.match(/\soldie\s/g));
+	if(!oldieCheck) {
+	document.write('<script src="//ajax.googleapis.com/ajax/libs/jquery/2.0.2/jquery.min.js"><\/script>');
+	} else {
+	document.write('<script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js"><\/script>');
+	}
+	</script>
+	<script>
+	if(!window.jQuery) {
+	if(!oldieCheck) {
+	  document.write('<script src="js/libs/jquery-2.0.2.min.js"><\/script>');
+	} else {
+	  document.write('<script src="js/libs/jquery-1.10.1.min.js"><\/script>');
+	}
+	}
+	</script>
+
+	<!--
+	Include gumby.js followed by UI modules followed by gumby.init.js
+	Or concatenate and minify into a single file -->
+	<script gumby-touch="js/libs" src="js/libs/gumby.js"></script>
+	<script src="js/libs/ui/gumby.retina.js"></script>
+	<script src="js/libs/ui/gumby.fixed.js"></script>
+	<script src="js/libs/ui/gumby.skiplink.js"></script>
+	<script src="js/libs/ui/gumby.toggleswitch.js"></script>
+	<script src="js/libs/ui/gumby.checkbox.js"></script>
+	<script src="js/libs/ui/gumby.radiobtn.js"></script>
+	<script src="js/libs/ui/gumby.tabs.js"></script>
+	<script src="js/libs/ui/gumby.navbar.js"></script>
+	<script src="js/libs/ui/jquery.validation.js"></script>
+	<script src="js/libs/gumby.init.js"></script>
+
+	<!--
+	gumby.min.js contains gumby.js, all UI modules and gumby.init.js
+	<script src="js/libs/gumby.min.js"></script> -->
+	<script src="js/plugins.js"></script>
+	<script src="js/main.js"></script>
+
+	<!-- Change UA-XXXXX-X to be your site's ID -->
+	<!--<script>
+	window._gaq = [['_setAccount','UAXXXXXXXX1'],['_trackPageview'],['_trackPageLoadTime']];
+	Modernizr.load({
+	  load: ('https:' == location.protocol ? '//ssl' : '//www') + '.google-analytics.com/ga.js'
+	});
+	</script>-->
+
+	<!-- Prompt IE 6 users to install Chrome Frame. Remove this if you want to support IE 6.
+	   chromium.org/developers/how-tos/chrome-frame-getting-started -->
+	<!--[if lt IE 7 ]>
+	<script src="//ajax.googleapis.com/ajax/libs/chrome-frame/1.0.3/CFInstall.min.js"></script>
+	<script>window.attachEvent('onload',function(){CFInstall.check({mode:'overlay'})})</script>
+	<![endif]-->
+	
+	<!-- Code Start -->
+	
+
+	<div class="row">
+		<div class="eight columns">
+			<h3 id="navBarTitle">Timetable @ Notts!</h3>
+		</div>
+		
+		<div class="four columns">
+			<ul id="navBar">
+				<li class="navBarItem"><div><p class="navBarText">About</p></div></li>
+				<li class="navBarItem"><div><p class="navBarText">Sign Up</p></div></li>
+				<li class="navBarItem"><div><p class="navBarText">Login!</p></div></li>
+			</ul>
+		</div>
+	</div>
+	
+	
+<table>
+	<tr>
+		<td></td>
+		<td class="time">9:00</td>
+		<td class="time">10:00</td>
+		<td class="time">11:00</td>
+		<td class="time">12:00</td>
+		<td class="time">13:00</td>
+		<td class="time">14:00</td>
+		<td class="time">15:00</td>
+		<td class="time">16:00</td>
+		<td class="time">17:00</td>
+	</tr>
+	<tr>
+		<td class="day">Monday</td>
+		<td class="session">Introduction to Modelling and Optimisation<br>Computing<br>JC-Computer
+			Science Main Lab<br>Aickelin U Professor,Garibaldi Jm Professor
+		</td>
+		<td class="session">Application Programming<br>Lecture<br>JC-Exchange
+			Building - D.LT3 Tiered Lecture Theatre<br>Higgins Ca Dr
+		</td>
+		<td class="session">Application Programming<br>Computing<br>JC-Computer
+			Science Main Lab<br>Higgins Ca Dr
+		</td>
+		<td class="session"></td>
+		<td class="session">Introduction to Formal Reasoning<br>Lecture<br>JC-Exchange
+			Building - D.LT3 Tiered Lecture Theatre<br>Altenkirch T Dr
+		</td>
+		<td class="session">Algorithms and Data Structures<br>Computing<br>JC-Computer
+			Science Network Lab,JC-Computer Science Main Lab<br>Parkes A J
+			Dr
+		</td>
+		<td class="session">Introduction to Image Processing<br>Lecture<br>JC-Dearing
+			Building - C42 Flat Seminar Room<br>Pridmore Tp Dr
+		</td>
+		<td class="session"></td>
+		<td class="session">Software Engineering Methodologies<br>Lecture<br>JC-Jubilee
+			Campus Business School South Auditorium - B52 Lecture Theatre<br>Greensmith
+			J Dr
+		</td>
+	</tr>
+	<tr>
+		<td class="day">Tuesday</td>
+		<td class="session">C++ Programming<br>Lecture<br>JC-Jubilee
+			Campus Business School Building South - A25 Lecture Theatre<br>Atkin
+			J Dr
+		</td>
+		<td class="session"></td>
+		<td class="session"></td>
+		<td class="session">Software Engineering Group Project<br>Lecture<br>JC-Jubilee
+			Campus Business School South Auditorium - B52 Lecture Theatre<br>Blanchfield
+			P Dr
+		</td>
+		<td class="session">Software Engineering Group Project<br>Lecture<br>JC-Exchange
+			Building - C.LT2 Tiered Lecture Theatre<br>Blanchfield P Dr
+		</td>
+		<td class="session">Planning and Search<br>Lecture<br>JC-Exchange
+			Building - C.LT2 Tiered Lecture Theatre<br>Alechina N Dr
+		</td>
+		<td class="session"></td>
+		<td class="session">Algorithms and Data Structures<br>Lecture<br>JC-Exchange
+			Building - C.LT2 Tiered Lecture Theatre<br>Parkes A J Dr
+		</td>
+		<td class="session">Algorithms and Data Structures<br>Tutorial<br>JC-Exchange
+			Building - C.LT2 Tiered Lecture Theatre<br>Parkes A J Dr
+		</td>
+	</tr>
+	<tr>
+		<td class="day">Wednesday</td>
+		<td class="session">Graphical User Interfaces<br>Lecture<br>JC-Jubilee
+			Campus Business School Building South - A25 Lecture Theatre<br>Blanchfield
+			P Dr
+		</td>
+		<td class="session">Concepts of Concurrency<br>Lecture<br>JC-Exchange
+			Building - D.LT3 Tiered Lecture Theatre<br>Logan Bs Dr
+		</td>
+		<td class="session">Graphical User Interfaces<br>Computing<br>JC-Computer
+			Science Main Lab<br>Blanchfield P Dr
+		</td>
+		<td class="session"></td>
+		<td class="session"></td>
+		<td class="session"></td>
+		<td class="session"></td>
+		<td class="session"></td>
+		<td class="session"></td>
+	</tr>
+	<tr>
+		<td class="day">Thursday</td>
+		<td class="session">Algorithms and Data Structures<br>Lecture<br>JC-Exchange
+			Building - C.LT2 Tiered Lecture Theatre<br>Parkes A J Dr
+		</td>
+		<td class="session">Introduction to Formal Reasoning<br>Lecture<br>JC-Exchange
+			Building - C.LT2 Tiered Lecture Theatre<br>Altenkirch T Dr
+		</td>
+		<td class="session">Introduction to Formal Reasoning<br>Computing<br>JC-Computer
+			Science Main Lab<br>Altenkirch T Dr
+		</td>
+		<td class="session">Computer Communications and Networks<br>Lecture<br>JC-Exchange
+			Building - D.LT3 Tiered Lecture Theatre<br>Radenkovic M Dr
+		</td>
+		<td class="session"></td>
+		<td class="session">Introduction to Image Processing<br>Lecture<br>JC-Jubilee
+			Campus Business School Building South - A26 Flat Seminar Room<br>Pridmore
+			Tp Dr
+		</td>
+		<td class="session">AI Programming Techniques<br>Computing<br>JC-Computer
+			Science Network Lab<br>John Ri Professor
+		</td>
+		<td class="session">Introduction to Formal Reasoning<br>Tutorial<br>JC-Dearing
+			Building - B46 Flat Seminar Room<br>Altenkirch T Dr
+		</td>
+		<td class="session">Machines and their Languages<br>Lecture<br>JC-Jubilee
+			Campus Business School Building South - A25 Lecture Theatre<br>Capretta
+			V Dr
+		</td>
+	</tr>
+	<tr>
+		<td class="day">Friday</td>
+		<td class="session">Graphical User Interfaces<br>Lecture<br>JC-Jubilee
+			Campus Business School Building South - A25 Lecture Theatre<br>Blanchfield
+			P Dr
+		</td>
+		<td class="session">Software Engineering Methodologies<br>Lecture<br>JC-Exchange
+			Building - D.LT3 Tiered Lecture Theatre<br>Greensmith J Dr
+		</td>
+		<td class="session">C++ Programming<br>Lecture<br>JC-Exchange
+			Building - C.LT2 Tiered Lecture Theatre<br>Atkin J Dr
+		</td>
+		<td class="session">Introduction to Formal Reasoning<br>Tutorial<br>JC-Jubilee
+			Campus Business School Building South - A26 Flat Seminar Room<br>
+		</td>
+		<td class="session">Planning and Search<br>Lecture<br>JC-Jubilee
+			Campus Business School Building South - A26 Flat Seminar Room<br>Alechina
+			N Dr
+		</td>
+		<td class="session">Introduction to Formal Reasoning<br>Tutorial<br>JC-Jubilee
+			Campus Business School Building South - A07 Flat Seminar Room<br>
+		</td>
+		<td class="session">Application Programming<br>Lecture<br>JC-Exchange
+			Building - C.LT2 Tiered Lecture Theatre<br>Higgins Ca Dr
+		</td>
+		<td class="session">Application Programming<br>Computing<br>JC-Computer
+			Science Main Lab<br>Higgins Ca Dr
+		</td>
+		<td class="session"></td>
+	</tr>
+</table>
+	
+
+  </body>
+</html>
